@@ -22,4 +22,6 @@ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 echo "autocmd vimenter * NERDTree ">> ~/.vimrc
 echo "autocmd StdinReadPre * let s:std_in=1">> ~/.vimrc
 echo "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif" >> ~/.vimrc
+echo "map <C-n> :NERDTreeToggle<CR>" >> ~/.vimrc
+echo "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif" >> ~/.vimrc
 ```
