@@ -25,3 +25,7 @@ echo "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endi
 echo "map <C-n> :NERDTreeToggle<CR>" >> ~/.vimrc
 echo "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif" >> ~/.vimrc
 ```
+**Install templates**
+```
+git clone git://github.com/aperezdc/vim-template.git ~/.vim/bundle/vim-template
+```
